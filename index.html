@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>the shuffle game</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="gridstyles.css">
+    <script src="grid.js"></script>
+    <h1> the shuffle game</h1>
+
+    <button class="start" onclick="assignc()">START</button>
+    <button class="reset" onclick="assignc()">RESET</button>
+
+    <div class="initialgrid">
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+        <div class="pattern"></div>
+    </div>
+    <hr class="line1">
+
+    <br><br>
+    <hr class="line2">
+    <div class="container">
+        <div class="content" onclick="check(0)"></div>
+        <div class="content" onclick="check(1)"></div>
+        <div class="content" onclick="check(2)"></div>
+        <div class="content" onclick="check(3)"></div>
+        <div class="content" onclick="check(4)"></div>
+        <div class="content" onclick="check(5)"></div>
+        <div class="content" id="border1" onclick="check(6)"></div>
+        <div class="content" id="border2" onclick="check(7)"></div>
+        <div class="content" id="border3" onclick="check(8)"></div>
+        <div class="content" onclick="check(9)"></div>
+        <div class="content" onclick="check(10)"></div>
+        <div class="content" id="border4" onclick="check(11)"></div>
+        <div class="content" id="border5" onclick="check(12)"></div>
+        <div class="content" id="border6" onclick="check(13)"></div>
+        <div class="content" onclick="check(14)"></div>
+        <div class="content" onclick="check(15)"></div>
+        <div class="content" id="border7" onclick="check(16)"></div>
+        <div class="content" id="border8" onclick="check(17)"></div>
+        <div class="content" id="border9" onclick="check(18)"></div>
+        <div class="content" onclick="check(19)"></div>
+        <div class="content" onclick="check(20)"></div>
+        <div class="content" onclick="check(21)"></div>
+        <div class="content" onclick="check(22)"></div>
+        <div class="content" onclick="check(23)"></div>
+        <div class="content" onclick="check(24)"></div>
+    </div>
+
+
+    <br>
+
+    <hr class="line3">
+    <div class="score" id="score"> your score :0</div>
+    <div class="pop-up">
+        <div class="matter">
+            <button class="close" onclick="disp_close()"> +</button>
+            <h1 class="winning_message"> YOU WIN !</h1>
+            <p class="scoreboard" id="scoreboard">your score is: </p>
+            <button class="try_again" onclick="assignc()"> Try Again </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
